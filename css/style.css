@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: default;
+    /* font-family: 'Poppins', sans-serif; */
+    
+}
+
+/* ///////////////////////////////////nav bar//////////////////////////// */
+nav{
+    position: sticky !important;
+    width: 100% !important;
+    left: 0;
+    top: 0;
+    box-shadow: 0px 5px 8px rgba(126, 123, 123, 0.5);
+    z-index: 10;
+    background-color: black;
+}
+.nav-link{
+    color: rgb(236, 211, 211)!important;  
+    font-size: 1.3rem;
+    font-family: 'Poor Story', cursive;
+    padding-top: 0;
+    padding-bottom: 2px;
+    margin-left: 20px;
+    letter-spacing: 1.5px;
+}
+.slace{
+    margin-left: 10px;
+}
+.nav-link:hover{
+    color: white !important;
+}
+/* ################################# HOME ############################# */
+#home{
+    width: 100%;
+    min-height: 100vh;
+    background-image:linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.6)),
+    url("../image/home5.jpg");
+    /* linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.8)), */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    display: flex;
+    justify-content: left;
+}
+
+#home .home-content{
+    margin-top: 10%;
+    margin-left: 10%;
+    text-align: left;
+    font-size: 3rem;
+}
+
+.home-content .display-1{
+    color: whitesmoke;
+    font-weight: 560;
+    font-family: 'Oswald', sans-serif;
+    cursor:default;
+    text-decoration: none;
+    font-size: 7rem;
+}
+
+#home a{
+    text-decoration: none;
+    font-family: 'Poor Story', cursive;
+    font-weight: 600;
+    font-size: 4.5rem;
+    color: whitesmoke;
+}
+
+@media (max-width:768px) {
+    .nav-link{
+        font-size: 1rem;
+        font-family: 'Poor Story', cursive;
+        padding-top: 0;
+        padding-bottom: 0px;
+        margin-left: 0px;
+        letter-spacing:0px;
+    }
+    .slace{
+        margin-left: 1px;
+    }
+    #home .home-content{
+        margin-top: 25%;
+        margin-left: 15%;
+        text-align: left;
+        font-size: 0rem;
+    }
+    .home-content .display-1{
+        font-weight: 400;
+        cursor:default;
+        font-size: 4rem;
+    }
+    #home a{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width:400px) {
+   
+    #home .home-content{
+        margin-top: 40%;
+        margin-left: 15%;
+        text-align: left;
+        font-size: 0rem;
+    }
+    .home-content .display-1{
+        font-weight: 400;
+        font-size: 3rem;
+    }
+    #home a{
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+/* ################################# works ############################# */
+#works{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#works .content{
+    text-align: center;
+}
+
+#works h2 {
+    font-weight: 500;
+}
+
+#works p{
+    color: rgb(160, 143, 143)!important;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: 'Oswald', sans-serif;
+}
+
+#works .body_for_cards{
+    margin-top: 2%;
+    margin-left: auto;
+}
+#works .body_for_cards h4{
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+
+}
+#works button{
+    border-radius: 0;
+}
+
+#works .body_for_cards img{
+    filter:contrast(200%) grayscale(100%); 
+    
+}
+
+#works .body_for_cards img:hover {
+    filter: none;
+    transition-duration:0.1s;
+    transition: 0.5s;
+}
+
+#works .body_for_cards p{
+    font-family: 'Poor Story', cursive;
+    font-weight: 500;
+}
+#works .body_for_cards p:hover{
+    color: black !important;
+    transition: .5s;
+} 
+
+
+
+/* ################################# ABOUT ############################# */
+#about{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+.about-content{
+    margin-right: 8%;
+    margin-left: 8%;
+}
+
+#about h2{
+    font-weight: 500;
+}
+
+#about p{
+    color: rgb(119, 114, 114);
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-family: 'Oswald', sans-serif;
+}
+
+#about h4{
+    font-family: 'Poor Story', cursive;
+}
+
+#about button{
+    border-radius: 0;
+}
+
+#about .icons{
+    margin-top: 5%;
+    font-size: 2rem;
+}
+
+#about .icons a{
+    color: black;
+}
+
+#about .icons a:hover{
+    color: rgb(119, 114, 114);
+    font-size: 2.2rem;
+    transition: .5s;
+}
+
+#about .image{
+    text-align: center;
+}
+
+/* ################################# contact ############################# */
+#contact{
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    display: flex;
+}
+
+
+#contact h2{
+    font-weight: 500;
+}
+
+#contact h3{
+    font-family: 'Poor Story', cursive;
+}
+
+#contact button{
+  border-radius: 0;
+}
+
+#contact .map{
+    padding-left: 5%;
+    /* display: flex; */
+}
+
+#contact i{
+    font-size: 3rem;
+}
+
+#contact ul p,.mail{
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+#contact ul .mail:hover{
+    color: rgb(87, 83, 83);
+}
+
+#contact iframe{
+    box-shadow: 5px 5px 5px rgba(87, 83, 83, .4);
+}
